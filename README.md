@@ -2,10 +2,10 @@
 
 ## r/NBA vs r/NBADiscussion 
 ### Contents:
-- [Purpose](##Purpose)
-- [Data](##Data)
-- [Model Results](##Model-Results)
-- [Conclusions and Recommendations](##Conclusions-and-Recommendations)
+- [Purpose](#Purpose)
+- [Data](#Data)
+- [Results](#Results)
+- [Conclusions and Recommendations](#Conclusions-and-Recommendations)
 
 
 ## Purpose:
@@ -92,7 +92,7 @@ Punctuation seems to be highly correlated with subreddits. Question marks in tit
 Out of 1000 posts in NBA, 731 have an empty body compared to only 39 out of the 995 NBADiscussion posts. Note that NBADiscussion has a minimum body char length of 350.
 
 
-## Model Results
+## Results
 
 | Data                                           | KNN Train | KNN Test | LR Train | LR Test  | RF Train | RF Test  |
 |------------------------------------------------|-----------|----------|----------|----------|----------|----------|
