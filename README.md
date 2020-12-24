@@ -1,13 +1,19 @@
 # Subreddit Classification
 
 ## r/NBA vs r/NBADiscussion 
+### Contents:
+- [Purpose](##Purpose)
+- [Data](##Data)
+- [Model Results](##Model-Results)
+- [Conclusions and Recommendations](##Conclusions-and-Recommendations)
 
-### Purpose:
+
+## Purpose:
 The goal of this project is to import data from two similar subreddits and train a classifer to distinguish between these two subreddits. We will also try to identify distinguishing features of these subreddits. Models will be created using KNN, Logistic Regression and Random Forest. Accuracy scores will be used to measure the effectiveness of each model. We also will look at whether each subreddits posting rules have an effect on the content promoted. 
 
 
 
-### Data:
+## Data:
 We will collect data from two subreddits:
 * r/NBA
 * r/NBADiscussion
@@ -86,7 +92,7 @@ Punctuation seems to be highly correlated with subreddits. Question marks in tit
 Out of 1000 posts in NBA, 731 have an empty body compared to only 39 out of the 995 NBADiscussion posts. Note that NBADiscussion has a minimum body char length of 350.
 
 
-# Model Results
+## Model Results
 
 | Data                                           | KNN Train | KNN Test | LR Train | LR Test  | RF Train | RF Test  |
 |------------------------------------------------|-----------|----------|----------|----------|----------|----------|
@@ -98,7 +104,7 @@ Out of 1000 posts in NBA, 731 have an empty body compared to only 39 out of the 
 | Title & Body Vectorized (c)                    | 0.841577  | 0.811623 | 0.989973 | 0.897795 | 0.999331 | 0.863727 |
 | Title & Body Vectorized  Word Counts (cvec) | 0.915106  | 0.889779 | 0.969919 | 0.897795 | 0.999331 | 0.865731 |
 
-# Conclusion
+## Conclusions and Recommendations
 The models all performed well on classifying data. This may be due to the large word count differences between the two subreddits. Taking out stop words seems to decrease accuracy and this again may be due to large word count. Adding punctuation improved scores probably due to the high correlations of punctuations. 
 
 NBADiscussion subreddits seem to ask more questions and have large word counts in the body of the post. NBA bodies usually are smaller and their titles are larger. This is in line with polices of the NBADiscussion subreddit which has minimum character counts for posts bodies and expect titles to be concise. Also, posts have higher amount of question marks because they may ask more questions to spur discusssion. 
